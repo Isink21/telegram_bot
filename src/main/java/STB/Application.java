@@ -11,6 +11,7 @@ public class Application {
     public static void main(String[] args) {
         SpringApplication.run(IsinkTelegramBot.class, args);
         BasicConfigurator.configure();
+        //123
     }
 
 }
