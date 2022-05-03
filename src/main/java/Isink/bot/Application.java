@@ -1,7 +1,5 @@
-package STB;
+package Isink.bot;
 
-import STB.bot.IsinkTelegramBot;
-import org.apache.log4j.BasicConfigurator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,9 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(IsinkTelegramBot.class, args);
-        BasicConfigurator.configure();
-        //123
+        SpringApplication.run(Application.class, args);
     }
 
 }
