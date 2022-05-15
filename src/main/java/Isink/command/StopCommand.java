@@ -1,10 +1,11 @@
 package Isink.command;
 
+import Isink.SendBotMessageService;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
 public class StopCommand implements Command{
 
-    private static final String STOP_MESSAGE = "Деактивировал все ваши подписки \uD83D\uDE1F.";
+    public static final String STOP_MESSAGE = "Деактивировал все ваши подписки \uD83D\uDE1F.";
 
     private final SendBotMessageService sendBotMessageService;
 

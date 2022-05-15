@@ -1,4 +1,4 @@
-package Isink.command;
+package Isink;
 
 public interface SendBotMessageService {
 

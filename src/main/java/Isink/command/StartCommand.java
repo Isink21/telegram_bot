@@ -1,6 +1,6 @@
 package Isink.command;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import Isink.SendBotMessageService;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
 public class StartCommand implements Command{

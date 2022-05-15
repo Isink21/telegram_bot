@@ -3,7 +3,7 @@ package Isink.bot;
 import static Isink.command.CommandName.NO;
 
 import Isink.command.CommandContainer;
-import Isink.command.SendBotMessageServiceImpl;
+import Isink.SendBotMessageServiceImpl;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;

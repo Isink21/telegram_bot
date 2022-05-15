@@ -4,6 +4,7 @@ import static Isink.command.CommandName.HELP;
 import static Isink.command.CommandName.START;
 import static Isink.command.CommandName.STOP;
 
+import Isink.SendBotMessageService;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
 public class HelpCommand  implements Command {

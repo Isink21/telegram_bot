@@ -1,4 +1,4 @@
-package Isink.command;
+package Isink;
 
 import Isink.bot.IsinkTelegramBot;
 import org.springframework.beans.factory.annotation.Autowired;

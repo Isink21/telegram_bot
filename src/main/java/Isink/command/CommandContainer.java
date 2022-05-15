@@ -5,6 +5,7 @@ import static Isink.command.CommandName.NO;
 import static Isink.command.CommandName.START;
 import static Isink.command.CommandName.STOP;
 
+import Isink.SendBotMessageService;
 import com.google.common.collect.ImmutableMap;
 
 public class CommandContainer {
