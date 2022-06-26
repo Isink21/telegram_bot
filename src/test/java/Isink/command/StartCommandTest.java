@@ -6,7 +6,7 @@ import static Isink.command.StartCommand.START_MESSAGE;
 import org.junit.jupiter.api.DisplayName;
 
 @DisplayName("Unit-level testing for StartCommand")
-class StartCommandTest extends AbstractCommandTest {
+public class StartCommandTest extends AbstractCommandTest {
 
     @Override
     String getCommandName() {
