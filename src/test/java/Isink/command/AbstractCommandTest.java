@@ -3,6 +3,8 @@ package Isink.command;
 import Isink.SendBotMessageService;
 import Isink.SendBotMessageServiceImpl;
 import Isink.bot.IsinkTelegramBot;
+import Isink.user.service.TelegramUserService;
+import Isink.user.service.TelegramUserServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -14,6 +16,7 @@ abstract class AbstractCommandTest {
 
     protected IsinkTelegramBot isinkTelegramBot = Mockito.mock(IsinkTelegramBot.class);
     protected SendBotMessageService sendBotMessageService = new SendBotMessageServiceImpl(isinkTelegramBot);
+    protected TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
 
     abstract String getCommandName();
 

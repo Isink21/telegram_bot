@@ -2,8 +2,10 @@ package Isink.bot;
 
 import static Isink.command.CommandName.NO;
 
-import Isink.command.CommandContainer;
 import Isink.SendBotMessageServiceImpl;
+import Isink.command.CommandContainer;
+import Isink.user.service.TelegramUserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -23,8 +25,9 @@ public class IsinkTelegramBot extends TelegramLongPollingBot {
 
     private final CommandContainer commandContainer;
 
-    public IsinkTelegramBot() {
-        this.commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this));
+    @Autowired
+    public IsinkTelegramBot(TelegramUserService telegramUserService) {
+        this.commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this), telegramUserService);
     }
 
     @Override

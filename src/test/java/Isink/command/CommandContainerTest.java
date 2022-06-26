@@ -1,8 +1,7 @@
 package Isink.command;
 
 import Isink.SendBotMessageService;
-import Isink.service.SendBotMessageServiceTest;
-import com.google.common.collect.ImmutableMap;
+import Isink.user.service.TelegramUserService;
 import java.util.Arrays;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -18,7 +17,8 @@ public class CommandContainerTest {
     @BeforeEach
     public void init() {
         SendBotMessageService sendBotMessageService = Mockito.mock(SendBotMessageService.class);
-        commandContainer = new CommandContainer(sendBotMessageService);
+        TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
+        commandContainer = new CommandContainer(sendBotMessageService, telegramUserService);
     }
 
     @Test
